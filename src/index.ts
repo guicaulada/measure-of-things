@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import yargs from "yargs";
 import api from "./api";
 import { Sort } from "./types";
@@ -27,7 +28,7 @@ if (require.main === module) {
     .option("sort", {
       alias: "s",
       type: "string",
-      description: "Results sorting [closest, lowest, highest]",
+      description: "Results sort [closest, lowest, highest]",
       default: "closest",
     }).argv;
   api.getAvailableUnits(argv.unit, argv.amount).then(units => {

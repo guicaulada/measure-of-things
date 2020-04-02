@@ -1,10 +1,21 @@
 {
   "name": "measure-of-things",
   "description": "Find comparative or relative measurements of physical quantities",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Guilherme Caulada (Sighmir)",
   "main": "dist/index.js",
   "license": "MIT",
+  "bin": {
+    "measure-of-things": "./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sighmir/measure-of-things.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sighmir/measure-of-things/issues"
+  },
+  "homepage": "https://github.com/Sighmir/measure-of-things#readme",
   "scripts": {
     "start": "node dist/index.js",
     "start:example": "node --no-warnings example/index.js",
@@ -15,7 +26,7 @@
     "test:coverage": "jest --coverage | yarn coveralls",
     "prettier:check": "prettier --list-different 'src/**/*.{ts,tsx}'",
     "prettier:write": "prettier --write 'src/**/*.{ts,tsx}'",
-    "build": "rm -rf ./dist && tsc",
+    "build": "rm -rf ./dist && tsc && chmod +x ./dist/index.js",
     "lint": "eslint . --ext ts",
     "clean": "rm -rf ./dist && rm -rf ./node_modules"
   },
