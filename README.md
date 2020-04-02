@@ -1,6 +1,6 @@
 # measure-of-things
 
-Find comparative or relative measurements of physical quantities by Guilherme Caulada (Sighmir)
+Find comparative or relative measurements of physical quantities using the website [The Measure Of Things](http://www.bluebulbprojects.com/MeasureOfThings).
 
 ## License
 
