@@ -1,4 +1,4 @@
-# measure-things
+# measure-of-things
 
 Find comparative or relative measurements of physical quantities by Guilherme Caulada (Sighmir)
 

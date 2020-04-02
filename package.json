@@ -1,11 +1,10 @@
 {
-  "name": "measure-things",
+  "name": "measure-of-things",
   "description": "Find comparative or relative measurements of physical quantities",
   "version": "0.0.1",
   "author": "Guilherme Caulada (Sighmir)",
   "main": "dist/index.js",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "start": "node dist/index.js",
     "start:example": "node --no-warnings example/index.js",
@@ -21,8 +20,10 @@
     "clean": "rm -rf ./dist && rm -rf ./node_modules"
   },
   "devDependencies": {
+    "@types/cheerio": "^0.22.17",
     "@types/jest": "^25.1.2",
     "@types/node": "^13.7.1",
+    "@types/yargs": "^15.0.4",
     "@typescript-eslint/eslint-plugin": "^2.19.2",
     "@typescript-eslint/parser": "^2.19.2",
     "coveralls": "^3.0.9",
@@ -52,5 +53,10 @@
   },
   "jest-junit": {
     "outputDirectory": "coverage"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3",
+    "yargs": "^15.3.1"
   }
 }
