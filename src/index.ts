@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 import yargs from "yargs";
 import api from "./api";
-import { Sort } from "./types";
+import { Arguments, Sort } from "./types";
 
 export default api;
 
-if (require.main === module) {
-  const argv = yargs
+export function getArguments(args?: string[]): Arguments {
+  return (args ? yargs(args) : yargs)
     .option("unit", {
       alias: "u",
       type: "string",
@@ -37,22 +37,37 @@ if (require.main === module) {
       description: "Add links to output",
       default: false,
     }).argv;
-  api.getAvailableUnits(argv.unit, argv.amount).then(units => {
-    const u = units.find(u => u.unit === argv.unit);
-    if (!u) {
-      throw new Error(
-        "Invalid unit value! Try: " +
-          units
-            .map(u => u.unit)
-            .join(", ")
-            .replace(/,(?=[^,]*$)/, " or"),
-      );
-    } else {
-      api
-        .getResultsPage(u, argv.sort as Sort, argv.page)
-        .then(data => (argv.links ? data : data.map(d => !delete d.links || d)))
-        .then(data => JSON.stringify(data, null, 4))
-        .then(console.log);
-    }
-  });
 }
+
+export function main(args?: string[], force = false): void {
+  if (require.main === module || force) {
+    const argv = getArguments(args);
+    api.getAvailableUnits(argv!.unit, argv!.amount).then(units => {
+      const u = units.find(u => u.unit === argv!.unit);
+      if (!u) {
+        throw new Error(
+          "Invalid unit value! Try: " +
+            units
+              .map(u => u.unit)
+              .join(", ")
+              .replace(/,(?=[^,]*$)/, " or"),
+        );
+      } else {
+        api
+          .getResultsPage(u, argv!.sort as Sort, argv!.page)
+          .then(data =>
+            argv!.links
+              ? data
+              : data.map(d => {
+                  delete d.links;
+                  return d;
+                }),
+          )
+          .then(data => JSON.stringify(data, null, 4))
+          .then(console.log);
+      }
+    });
+  }
+}
+
+main();

@@ -75,9 +75,9 @@ export function parseResult(result: string): Result[] {
   return titles.map((title, i) => {
     return {
       title,
-      precision: precisions[i],
-      note: notes[i],
-      explanation: explanations[i],
+      precision: precisions[i].trim(),
+      note: notes[i].trim(),
+      explanation: explanations[i].trim(),
       links: links
         .slice(i, i + 4)
         .sort((l1, l2) => (l1.text! > l2.text! ? 1 : -1)),
