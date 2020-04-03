@@ -30,6 +30,12 @@ if (require.main === module) {
       type: "string",
       description: "Results sort [closest, lowest, highest]",
       default: "closest",
+    })
+    .option("links", {
+      alias: "l",
+      type: "boolean",
+      description: "Add links to output",
+      default: false,
     }).argv;
   api.getAvailableUnits(argv.unit, argv.amount).then(units => {
     const u = units.find(u => u.unit === argv.unit);
@@ -42,7 +48,11 @@ if (require.main === module) {
             .replace(/,(?=[^,]*$)/, " or"),
       );
     } else {
-      api.getResultsPage(u, argv.sort as Sort, argv.page).then(console.log);
+      api
+        .getResultsPage(u, argv.sort as Sort, argv.page)
+        .then(data => (argv.links ? data : data.map(d => !delete d.links || d)))
+        .then(data => JSON.stringify(data, null, 4))
+        .then(console.log);
     }
   });
 }

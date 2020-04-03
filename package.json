@@ -1,7 +1,7 @@
 {
   "name": "measure-of-things",
   "description": "Find comparative or relative measurements of physical quantities",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "Guilherme Caulada (Sighmir)",
   "main": "dist/index.js",
   "license": "MIT",
