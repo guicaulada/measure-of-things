@@ -3,8 +3,8 @@ export interface Unit {
   unit: string;
   comp: string;
   amt: string;
-  score: 2.2083333333333;
-  common: 1;
+  score: number;
+  common: number;
 }
 
 export interface Link {
@@ -18,7 +18,15 @@ export interface Result {
   precision: string;
   note: string;
   explanation: string;
-  links: Link[];
+  links?: Link[];
+}
+
+export interface Arguments {
+  unit: string;
+  amount: number;
+  page: number;
+  sort: string;
+  links: boolean;
 }
 
 export type UnitList = Unit[];
