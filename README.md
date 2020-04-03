@@ -2,6 +2,10 @@
 
 Find comparative or relative measurements of physical quantities using the website [The Measure Of Things](http://www.bluebulbprojects.com/MeasureOfThings).
 
+## Usage
+
+`npx measure-of-things`
+
 ## License
 
 ```
