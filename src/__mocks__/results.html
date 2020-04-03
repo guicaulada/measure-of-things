@@ -1,0 +1,281 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>The Measure of Things - 5 meters</title>
+<meta http-equiv="content-type" content="text/html;" charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/ico" href="favicon.ico">
+<script language="JavaScript" type="text/javascript" src="js/jsVariables.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="/common/js/jquery.number.min.js" async></script>
+<script language="JavaScript" type="text/javascript" src="js/jsUnitArray.min.json"></script>
+<script language="JavaScript" type="text/javascript" src="js/jquery.MOTpicker.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/jquery.MOTsearcher.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e4c7bb90b2f2fba" async></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6806599980587797",
+    enable_page_level_ads: true
+  });
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-23887652-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script language="JavaScript" type="text/javascript">
+function getViewportModel(){switch(!0){case 750>=getViewportSize():return"mobile";default:return"desktop"}}function getViewportSize(){return $(window).width()};
+</script>
+<style type="text/css">
+.mobile-hide{display:block;} .mobile-hide-inline{display:inline;} .mobile-show,.mobile-show-block{display:none;} 
+</style>
+<style type="text/css">
+.apiPromo,.apiPromo a,.apiPromo a:visited{background-color:#F00;color:#FFF;font-weight:bold;font-style:italic;font-size:15pt;}
+</style>
+<link rel="stylesheet" href="css/screen.css" type="text/css">
+<link rel="stylesheet" href="/common/css/jquery-ui.min.css">
+<link rel="stylesheet" href="css/mobile.css" type="text/css" media="(max-width: 750px)">
+<script language="JavaScript" type="text/javascript" src="js/jquery.MOTequivalents.min.js" async></script>
+<script language="JavaScript" />
+$("document").ready(function(){animSpeed=0;userComp="length";userUnit="m";userAmt="5";userUnitFriendly="meters";""!=userComp&&""!=userUnit&&""!=userAmt&&""!=userUnitFriendly&&(highlightCompSelected($("img#"+userComp)[0]),$("#unitLinkBlock").html(buildUnitGrid(userComp)),userComp="distance"==userComp||"height"==userComp?"length":userComp,markUnitSelected($("span[formValue='"+
+userUnit+"']")[0],userUnit),$("#unitSelectedBlock,#unitSelectedBlockMobile").html(units[userComp][userUnit].l),"unitsHidden"==$("span[formValue='"+userUnit+"']").parent()[0].id&&(tabHeight=defaultTabHeight,toggleHiddenUnits()),markAmtEntered(userAmt));"mobile"==getViewportModel()?(deflate("unit"),deflate("comp"),deflate("amt")):inflateComp();animSpeed=defaultAnimSpeed});
+</script><link rel="stylesheet" href="css/promoted.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load",function(){window.cookieconsent.initialise({palette:{popup:{background:"#237afc"},button:{background:"#fff",text:"#237afc"}},theme:"edgeless",content:{dismiss:"I understand and accept",link:"Learn more",href:"privacy.html"}});});
+</script>
+</head>
+<body>
+<div class="width100 text-center content-frame-background">
+Bluebulb Projects presents:<br />
+<a href="default.php"><img src="/MeasureOfThings/images/logo.jpg" alt="The Measure of Things Logo" title="The Measure of Things Logo" id="header-box-logoimage" /></a>
+</div><form method="get" action="results.php" id="searchPickForm">
+	<div id="picker-box" class="width100 border-bottom border-top display-none" style="background-color:#FC0;">
+		<div class="float-left hide-overflow text-center" id="compLarge">
+			<div class="text-left picker-title" id="compTitle">Step 1: What kind of measurement do you want to compare?</div>
+			<div class="text-center" id="compLinkBlock">
+				<div class="compIconBlock">
+				<img src="images/length.png" id="length" alt="Length Icon (Ruler)" title="Length Icon (Ruler)" name="length" class="compIcon" style="width:54px;height:66px;" /><br />Length</div>
+				<div class="compIconBlock">
+				<img src="images/weight.png" id="weight" alt="Weight (Mass) Icon (Scale)" title="Weight (Mass) Icon (Scale)"
+				name="weight" class="compIcon" style="width:57px;height:66px;" /><br />Weight</div>
+				<div class="compIconBlock">
+				<img src="images/speed.png" id="speed" alt="Speed Icon (Running Man)" title="Speed Icon (Running Man)" name="speed" class="compIcon" style="width:54px;height:66px;" /><br />Speed</div>
+				<div class="compIconBlock">
+				<img src="images/time.png" id="time" alt="Time Icon (Clock)" title="Time Icon (Clock)" name="time" class="compIcon" style="width:56px;height:66px;" /><br />Time</div>
+				<div class="compIconBlock">
+				<img src="images/area.png" id="area" alt="Area Icon (Floorplan)" title="Area Icon (Floorplan)" name="area" class="compIcon" style="width:54px;height:66px;" /><br />Area</div>
+				<div class="compIconBlock">
+				<img src="images/volume.png" id="volume" alt="Volume Icon (Beaker)" title="Volume Icon (Beaker)" name="volume" class="compIcon" style="width:56px;height:66px;" /><br />Volume</div>
+				<div class="compIconBlock">
+				<img src="images/data.png" id="data" alt="Computer Data Icon (Laptop)" title="Computer Data Icon (Laptop)" name="data" class="compIcon" style="width:59px;height:66px;" /><br />Data</div>
+				<div style="clear:both;"></div>
+			</div>
+			<div class="text-center display-none bold wrap mobile-hide" id="compSelectedBlock" ><br /><img id="compSelectedIcon" class="display-none" src=""/></div>
+			<div class="text-center display-none bold wrap mobile-show" id="compSelectedBlockMobile" ></div>
+			<br /><span id="compInstruction">Click an icon above to choose a measurement type for comparison. This space will display an explanation as you move your mouse over the icons.</span>
+		</div>
+		<div class="float-left hide-overflow text-center" style="" id="unitLarge">
+			<div class="text-center picker-title" id="unitTitle">Unit</div>
+			<div id="unitLinkBlock" class="display-none bold" ></div>
+			<div id="unitSelectedBlock" class="bold wrap mobile-hide"></div>
+			<div id="unitSelectedBlockMobile" class="bold wrap mobile-show"></div>
+			<br /><span id="unitInstruction"></span>
+		</div>
+		<div class="float-left hide-overflow text-center" style="line-height:150%;" id="amtLarge">
+			<div class="text-center picker-title" id="amtTitle">Amount</div>
+			<div id="amtLinkBlock" class="display-none bold" >
+				<input type="text" id="amtInput" name="amt" value="" />
+			</div>
+			<div id="amtSelectedBlock" class="bold mobile-hide letter-break"><br /></div>
+			<div id="amtSelectedBlockMobile" class="bold mobile-show letter-break"></div>
+			<input id="submitButton" type="submit" value="Show Me" class="mobile-hide-inline" disabled="true">
+			<br /><span id="amtInstruction"></span>
+		</div>
+		<div class="float-left hide-overflow text-center border-bottom width100 mobile-show" style="" id="amtButton">
+			<input id="submitButton" type="submit" value="Show Me"><br /><br />
+		</div>
+	</div>
+	<div id="searcher-box" class="width100 text-center">
+		<span class="bold text-center picker-title font125">Enter a measurement to see comparisons</span><br />
+		<input type="text" id="search" class="font125 bold width25 grey italic"><br />
+		<span id="searchInstruction"></span><br />
+		<input id="submitButton-search" type="submit" value="Show Me" disabled="disabled">
+	</div>
+<input type="hidden" id="compInput" name="comp" value="" />
+<input type="hidden" id="unitInput" name="unit" value="" />
+<input type="hidden" id="xInput" name="searchTerm" value="" />
+</form>
+<script language="JavaScript">
+edgemeas=92;resizeTabs();
+</script>
+<div class="clear"></div><div style="min-height: calc(100vh - 409px);">
+<div class="hide-overflow text-center" id="equivalentsContainer">
+	<span class="bold toggle-box-control underline">Equivalents in other units</span>
+	<span class="bold toggle-box-control display-none underline">Click here to hide this</span>
+	<div class="display-none" id="equivalentsToggleContainer">
+		<div class="float-right width50" id="eqRolloverContainer">
+			<div class="width20 results-equivalents-conversionBox"><span class="r2 c1" unt="16.4041994750656">feet</span></div><div class="width20 results-equivalents-conversionBox"><span class="r2 c2" unt="0.005">kilometers</span></div><div class="width20 results-equivalents-conversionBox"><span class="r2 c3" unt="500">centimeters</span></div><div class="width20 results-equivalents-conversionBox"><span class="r2 c4" unt="5,000">milimeters</span></div><div class="width20 results-equivalents-conversionBox"><span class="r2 c5" unt="0.0031068559611867">miles</span></div><div class="width20 results-equivalents-conversionBox"><span class="r3 c1" unt="5.46806649168854">yards</span></div><div class="width20 results-equivalents-conversionBox"><span class="r3 c2" unt="196.850393700787">inches</span></div><div class="width20 results-equivalents-conversionBox"><span class="r3 c3" unt="0.0026997840172786">nautical miles</span></div><div class="width20 results-equivalents-conversionBox"><span class="r3 c4" unt="590.551181102339">barleycorns</span></div><div class="width20 results-equivalents-conversionBox"><span class="r3 c5" unt="2.73403324584427">fathoms</span></div><div class="width20 results-equivalents-conversionBox"><span class="r4 c1" unt="0.00089992800575954">leagues</span></div><div class="width20 results-equivalents-conversionBox"><span class="r4 c2" unt="0.994193907579734">rods</span></div><div class="width20 results-equivalents-conversionBox"><span class="r4 c3" unt="224.971878515186">fingers</span></div><div class="width20 results-equivalents-conversionBox"><span class="r4 c4" unt="49.2125984251969">hands</span></div><div class="width20 results-equivalents-conversionBox"><span class="r4 c5" unt="0.0034175415573053">hanks</span></div><div class="width20 results-equivalents-conversionBox"><span class="r5 c1" unt="0.068350831146107">leas</span></div><div class="width20 results-equivalents-conversionBox"><span class="r5 c2" unt="5,000,000">microns</span></div><div class="width20 results-equivalents-conversionBox"><span class="r5 c3" unt="87.4890638670166">nails</span></div><div class="width20 results-equivalents-conversionBox"><span class="r5 c4" unt="6.56167979002625">paces</span></div><div class="width20 results-equivalents-conversionBox"><span class="r5 c5" unt="2.0505249343832">lengths</span></div><div class="width20 results-equivalents-conversionBox"><span class="r6 c1" unt="4.37445319335083">ells</span></div><div class="width20 results-equivalents-conversionBox"><span class="r6 c2" unt="0.000000000000000528500417012308">light years</span></div><div class="width20 results-equivalents-conversionBox"><span class="r6 c3" unt="0.000000000000000162038964481967">parsecs</span></div><div class="width20 results-equivalents-conversionBox"><span class="r6 c4" unt="0.820209973753281">ropes</span></div><div class="width20 results-equivalents-conversionBox"><span class="r6 c5" unt="0.182268883056285">shackles</span></div><div class="width20 results-equivalents-conversionBox"><span class="r7 c1" unt="32.8083989501312">shaftments</span></div><div class="width20 results-equivalents-conversionBox"><span class="r7 c2" unt="2.93806557762369">smoots</span></div><div class="width20 results-equivalents-conversionBox"><span class="r7 c3" unt="21.8722659667542">spans</span></div><div class="width20 results-equivalents-conversionBox"><span class="r7 c4" unt="10.9361329833771">cubits</span></div><div class="width20 results-equivalents-conversionBox"><span class="r7 c5" unt="0.024854847689493">furlongs</span></div>			<br />&nbsp;<br />
+		</div>
+		<div class="float-left width50" id="eqStageContainer">
+			<i>Rollover a unit to see the conversion</i><br />
+		</div>
+	</div>
+</div><br /><br />
+<div class="width100 text-center"><strong>How long is 5 meters?</strong></div>
+<br /><div class="text-center" id="results-sort-box">
+<div>
+<span class="accented">Sort Order:</span><br />
+<a class="bold no-underline">Closest first</a> |
+<a href="results.php?comp=length&unit=m&amt=5&sort=cntD&p=1">Highest first</a> |
+<a href="results.php?comp=length&unit=m&amt=5&sort=cnt&p=1">Lowest first</a>
+<br /><br />
+</div>
+</div><table class="width100"><tr><td class="adSense-box-vertical-td"><!-- Wide Skyscraper -->
+<div class="text-center mobile-hide">
+<ins class="adsbygoogle" style="width:160px;height:600px" data-ad-client="ca-pub-6806599980587797" data-ad-slot="2027143111"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- End Wide Skycraper --></td><td id="results-box"><div class="width70 results-content-row">
+<span class="results-content-row-title accented font150">It's about one-and-one-fourth times as long as a Beetle (Volkswagen).</span>
+<div>
+<div class="results-content-row-precision accented bold font115">In other words, 5 meters is 1.2260 times the length of a Beetle (Volkswagen), and the length of a Beetle (Volkswagen) is 0.81570 times that amount.<br /></div>
+(1964 model) (a.k.a. Volkswagen 1200, a.k.a. <i>Käfer</i>)<br /><span class="font115">A 1964 Volkswagen Beetle measures <a href="results.php?comp=distance&unit=m&amt=4.079&sort=pr&p=1">4.079 m</a>.  As the longest continuously-produced automobile design — in production for <a href="results.php?comp=time&unit=y&amt=75&p=1&sort=pr">75 years</a> between 1938 and 2003 — the Beetle was voted the most fourth-most influential car of the twentieth century by the Global Automotive Elections Foundation.</span>
+<div class="results-content-row-linkBox text-left">
+<a href="http://en.wikipedia.org/wiki/Volkswagen_Beetle#VW_Beetle_1967" target="_new" title="Click here to view the source of the measurement.">Measurement source</a> | 
+<a href="singleresult.php?comp=length&unit=m&amt=5&i=393" title="Click here to share this link" >Link to this result</a> |
+<a href="correction.php?comp=length&unit=m&amt=5&i=393" title="Click here to report a mistake or correction on this item.">How do I report a mistake on this?</a> | 
+<a href="faq.php#q10" title="Click here for citation instructions">How do I cite this?</a><br />
+</div>
+<!-- AddThis Code BEGIN --><div class="addthis_sharing_toolbox addthis_sharing_toolbox_contentRow float-right text-right" data-url="http://www.bluebulbprojects.com/MeasureOfThings/singleresult.php?comp=length&unit=m&amt=5&i=393" data-title="5 meters is about one-and-one-fourth times as long as a"></div><!-- AddThis Code END -->
+</div>
+</div>
+<!-- Horizontal Mobile Ad -->
+<div class="text-center adSense-box-horizontal mobile-show-block">
+<ins class="adsbygoogle" style="width:320px;height:50px" data-ad-client="ca-pub-6806599980587797" data-ad-slot="5009132317"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- End Horitonzal Mobile Ad --><div class="width70 results-content-row">
+<span class="results-content-row-title accented font150">It's about four-fifths as tall as a Giraffe.</span>
+<div>
+<div class="results-content-row-precision accented bold font115">In other words, the height of a Giraffe is 1 times 5 meters.<br /></div>
+(<i>Giraffa camelopardalis</i>) (Adult, average)<br /><span class="font115">An adult giraffe may grow to be up to <a href="results.php?comp=height&unit=m&amt=6&sort=pr&p=1">6 m</a> tall.  Adult giraffes require very little sleep, averaging just <a href="results.php?comp=time&unit=h&amt=1.9&p=1&sort=pr">1.9 hours</a> per day.</span>
+<div class="results-content-row-linkBox text-left">
+<a href="http://animal.discovery.com/guides/mammals/habitat/tropgrassland/giraffe.html" target="_new" title="Click here to view the source of the measurement.">Measurement source</a> | 
+<a href="singleresult.php?comp=length&unit=m&amt=5&i=66" title="Click here to share this link" >Link to this result</a> |
+<a href="correction.php?comp=length&unit=m&amt=5&i=66" title="Click here to report a mistake or correction on this item.">How do I report a mistake on this?</a> | 
+<a href="faq.php#q10" title="Click here for citation instructions">How do I cite this?</a><br />
+</div>
+<!-- AddThis Code BEGIN --><div class="addthis_sharing_toolbox addthis_sharing_toolbox_contentRow float-right text-right" data-url="http://www.bluebulbprojects.com/MeasureOfThings/singleresult.php?comp=length&unit=m&amt=5&i=66" data-title="5 meters is about four-fifths as tall as a"></div><!-- AddThis Code END -->
+</div>
+</div>
+<div class="width70 results-content-row">
+<span class="results-content-row-title accented font150">It's about three-fifths as long as a London bus.</span>
+<div>
+<div class="results-content-row-precision accented bold font115">In other words, 5 meters is 0.5970 times the length of a London bus, and the length of a London bus is 1.680 times that amount.<br /></div>
+(Routemaster Double-Decker, RM standard specification)<br /><span class="font115">The Routemaster Double-Decker buses, well-known as icons of London, measure <a href="results.php?comp=distance&unit=m&amt=8.38&sort=pr&p=1">8.38 m</a> in length.  The buses were said to be well-designed for travel in the London traffic, as they offered an open door for riders to board and exit even while the bus was moving at low speeds, and a full-time conductor to collect fares.</span>
+<div class="results-content-row-linkBox text-left">
+<a href="http://www.bbc.co.uk/dna/h2g2/A8688766" target="_new" title="Click here to view the source of the measurement.">Measurement source</a> | 
+<a href="singleresult.php?comp=length&unit=m&amt=5&i=484" title="Click here to share this link" >Link to this result</a> |
+<a href="correction.php?comp=length&unit=m&amt=5&i=484" title="Click here to report a mistake or correction on this item.">How do I report a mistake on this?</a> | 
+<a href="faq.php#q10" title="Click here for citation instructions">How do I cite this?</a><br />
+</div>
+<!-- AddThis Code BEGIN --><div class="addthis_sharing_toolbox addthis_sharing_toolbox_contentRow float-right text-right" data-url="http://www.bluebulbprojects.com/MeasureOfThings/singleresult.php?comp=length&unit=m&amt=5&i=484" data-title="5 meters is about three-fifths as long as a"></div><!-- AddThis Code END -->
+</div>
+</div>
+<div class="width70 results-content-row">
+<span class="results-content-row-title accented font150">It's about two times as tall as a Christmas Tree (artificial).</span>
+<div>
+<div class="results-content-row-precision accented bold font115">In other words, 5 meters is 2.20 times the height of a Christmas Tree (artificial), and the height of a Christmas Tree (artificial) is 0.450 times that amount.<br /></div>
+(artificial; average height)<br /><span class="font115">The most common height of an artificial Christmas Tree is <a href="results.php?comp=height&unit=m&amt=2.3&sort=pr&p=1">2.3 m</a>.  According to the most recent USDA Census of Agriculture, a total of <a href="results.php?comp=area&unit=km2&amt=1389.59&p=1&sort=pr">1,389.59 sq. km (343,374 acres)</a> of Christmas Trees were farmed in the US in 2007.<br /><br /><i>To all those observing, Merry Christmas from The Measure of Things!</i>
+
+</span>
+<div class="results-content-row-linkBox text-left">
+<a href="http://www.artificialtrees.com/resources-size-shape.php" target="_new" title="Click here to view the source of the measurement.">Measurement source</a> | 
+<a href="singleresult.php?comp=length&unit=m&amt=5&i=460" title="Click here to share this link" >Link to this result</a> |
+<a href="correction.php?comp=length&unit=m&amt=5&i=460" title="Click here to report a mistake or correction on this item.">How do I report a mistake on this?</a> | 
+<a href="faq.php#q10" title="Click here for citation instructions">How do I cite this?</a><br />
+</div>
+<!-- AddThis Code BEGIN --><div class="addthis_sharing_toolbox addthis_sharing_toolbox_contentRow float-right text-right" data-url="http://www.bluebulbprojects.com/MeasureOfThings/singleresult.php?comp=length&unit=m&amt=5&i=460" data-title="5 meters is about two times as tall as a"></div><!-- AddThis Code END -->
+</div>
+</div>
+<div class="width70 results-content-row">
+<span class="results-content-row-title accented font150">It's about half as tall as a Telephone Pole.</span>
+<div>
+<div class="results-content-row-precision accented bold font115">In other words, 5 meters is 0.450 times the height of a Telephone Pole, and the height of a Telephone Pole is 2.20 times that amount.<br /></div>
+(a.k.a. Utility Pole, a.k.a Power Pole, a.k.a. Telegraph Pole, a.k.a. Telegraph Post, a.k.a. Hydro Pole) (exposed height; per Florida Public Service Commission average)<br /><span class="font115">A standard telephone pole is <a href="results.php?comp=height&unit=m&amt=11&sort=pr&p=1">11 m</a> tall.  Despite alternatives, most telephone poles in the US are made of wood &mdash; most commonly pine &mdash; and have a lifespan of <a href="results.php?comp=time&unit=y&amt=37.5&p=1&sort=pr">25 to 50 years</a>, depending on climate and preservatives applied.</span>
+<div class="results-content-row-linkBox text-left">
+<a href="http://www.psc.state.fl.us/ConsumerAssistance/UtilityPoleDescriptions" target="_new" title="Click here to view the source of the measurement.">Measurement source</a> | 
+<a href="singleresult.php?comp=length&unit=m&amt=5&i=459" title="Click here to share this link" >Link to this result</a> |
+<a href="correction.php?comp=length&unit=m&amt=5&i=459" title="Click here to report a mistake or correction on this item.">How do I report a mistake on this?</a> | 
+<a href="faq.php#q10" title="Click here for citation instructions">How do I cite this?</a><br />
+</div>
+<!-- AddThis Code BEGIN --><div class="addthis_sharing_toolbox addthis_sharing_toolbox_contentRow float-right text-right" data-url="http://www.bluebulbprojects.com/MeasureOfThings/singleresult.php?comp=length&unit=m&amt=5&i=459" data-title="5 meters is about half as tall as a"></div><!-- AddThis Code END -->
+</div>
+</div>
+<!-- Horizontal Mobile Ad -->
+<div class="text-center adSense-box-horizontal mobile-show-block">
+<ins class="adsbygoogle" style="width:320px;height:50px" data-ad-client="ca-pub-6806599980587797" data-ad-slot="5009132317"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- End Horitonzal Mobile Ad --><div class="width70 results-content-row">
+<span class="results-content-row-title accented font150">It's about two-and-a-half times as tall as  André the Giant.</span>
+<div>
+<div class="results-content-row-precision accented bold font115">In other words, the height of  André the Giant is 0.430 times 5 meters.<br /></div>
+(Andr( Ren( Ruossimoff) (1946-1993) (wrestler and actor; WWE kayfabe height)<br /><span class="font115">Andr& the Giant, who had a pituitary syndrome called acromegaly, was <a href="results.php?comp=height&unit=m&amt=2.2&sort=pr&p=1">2.2 m</a> tall.  Prior to 1973, Roussimoff was billed as having a height of <a href="results.php?comp=height&unit=m&amt=2.1&p=1&sort=pr">2.1 m</a> and his true height is the subject of some dispute.</span>
+<div class="results-content-row-linkBox text-left">
+<a href="http://www.andrethegiant.com/about/bio.html" target="_new" title="Click here to view the source of the measurement.">Measurement source</a> | 
+<a href="singleresult.php?comp=length&unit=m&amt=5&i=371" title="Click here to share this link" >Link to this result</a> |
+<a href="correction.php?comp=length&unit=m&amt=5&i=371" title="Click here to report a mistake or correction on this item.">How do I report a mistake on this?</a> | 
+<a href="faq.php#q10" title="Click here for citation instructions">How do I cite this?</a><br />
+</div>
+<!-- AddThis Code BEGIN --><div class="addthis_sharing_toolbox addthis_sharing_toolbox_contentRow float-right text-right" data-url="http://www.bluebulbprojects.com/MeasureOfThings/singleresult.php?comp=length&unit=m&amt=5&i=371" data-title="5 meters is about two-and-a-half times as tall as "></div><!-- AddThis Code END -->
+</div>
+</div>
+<div class="width70 results-content-row">
+<span class="results-content-row-title accented font150">It's about two-and-a-half times as tall as  Shaq.</span>
+<div>
+<div class="results-content-row-precision accented bold font115">In other words, the height of  Shaq is 0.430 times 5 meters.<br /></div>
+(Shaquille O'Neal) (1972-) (professional basketball player, most famously of the Los Angeles Lakers)<br /><span class="font115">Shaq is <a href="results.php?comp=height&unit=m&amt=2.2&sort=pr&p=1">2.2 m</a> tall.  Shaq maintains an active interest in police work and has served as a reserve officer in both Los Angeles, California and Miami, Florida while playing for NBA franchises in those cities.</span>
+<div class="results-content-row-linkBox text-left">
+<a href="http://www.nba.com/playerfile/shaquille_oneal/" target="_new" title="Click here to view the source of the measurement.">Measurement source</a> | 
+<a href="singleresult.php?comp=length&unit=m&amt=5&i=369" title="Click here to share this link" >Link to this result</a> |
+<a href="correction.php?comp=length&unit=m&amt=5&i=369" title="Click here to report a mistake or correction on this item.">How do I report a mistake on this?</a> | 
+<a href="faq.php#q10" title="Click here for citation instructions">How do I cite this?</a><br />
+</div>
+<!-- AddThis Code BEGIN --><div class="addthis_sharing_toolbox addthis_sharing_toolbox_contentRow float-right text-right" data-url="http://www.bluebulbprojects.com/MeasureOfThings/singleresult.php?comp=length&unit=m&amt=5&i=369" data-title="5 meters is about two-and-a-half times as tall as "></div><!-- AddThis Code END -->
+</div>
+</div>
+</td><td class="adSense-box-vertical-td"><!-- Wide Skyscraper -->
+<div class="text-center mobile-hide">
+<ins class="adsbygoogle" style="width:160px;height:600px" data-ad-client="ca-pub-6806599980587797" data-ad-slot="2027143111"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- End Wide Skycraper --></td></tr></table><br />
+<div class="width100 text-center" id="results-pageLink-box">
+Results Pages:<br />
+&lt; &nbsp;1 &nbsp;<a href="results.php?comp=length&unit=m&amt=5&sort=pr&p=2">2</a> &nbsp;<a href="results.php?comp=length&unit=m&amt=5&sort=pr&p=3">3</a> &nbsp;<a href="results.php?comp=length&unit=m&amt=5&sort=pr&p=4">4</a> &nbsp;<a href="results.php?comp=length&unit=m&amt=5&sort=pr&p=5">5</a> &nbsp;<a href="results.php?comp=length&unit=m&amt=5&sort=pr&p=6">6</a> &nbsp;<a href="results.php?comp=length&unit=m&amt=5&sort=pr&p=7">7</a> &nbsp;<a href="results.php?comp=length&unit=m&amt=5&sort=pr&p=8">8</a> &nbsp;<a href="results.php?comp=length&unit=m&amt=5&sort=pr&p=9">9</a> &nbsp;<a href="results.php?comp=length&unit=m&amt=5&sort=pr&p=10">10</a> &nbsp;<a href="results.php?comp=length&unit=m&amt=5&sort=pr&p=11">11</a> &nbsp;<a href="results.php?comp=length&unit=m&amt=5&sort=pr&p=12">12</a> &nbsp;<a href="results.php?comp=length&unit=m&amt=5&sort=pr&p=13">13</a> &nbsp;<a href="results.php?comp=length&unit=m&amt=5&sort=pr&p=14">14</a> &nbsp;<a href="results.php?comp=length&unit=m&amt=5&sort=pr&p=15">15</a> &nbsp;<a href="results.php?comp=length&unit=m&amt=5&sort=pr&p=16">16</a> &nbsp;<a href="results.php?comp=length&unit=m&amt=5&sort=pr&p=17">17</a> &nbsp;<a href="results.php?comp=length&unit=m&amt=5&sort=pr&p=18">18</a> &nbsp;<a href="results.php?comp=length&unit=m&amt=5&sort=pr&p=2">&gt;</a> &nbsp;</div>
+<br /></div><script language="JavaScript">
+$(document).ready(function(){$("#footer-privacy-link").click(function(){window.open("privacy.html","win","status=no,toolbar=no,menubar=no,,width=600,height=550");return!1})});
+</script>
+<div class="width100 text-center content-frame-background" id="footer-box">
+<small><a href="/MeasureOfThings/default.php">Use The Measure of Things Tool</a> | 
+<a href="/MeasureOfThings/faq.php">FAQ</a> | 
+<a href="/MeasureOfThings/about.php">About Us</a> |
+<a href="/MeasureOfThings/api/default.php">The Measure of Things API</a> |
+<a href="/MeasureOfThings/contact.php">Contact</a> | 
+<a href="" id="footer-privacy-link">Privacy Policy</a> | 
+<a href="http://www.bluebulbprojects.com/CountOfThings/">Use The Count of Things Tool</a><br />
+<!-- AddThis Code BEGIN --><div class="addthis_sharing_toolbox addthis_sharing_toolbox_footer text-center"></div><!-- AddThis Code END -->
+Design and Text Copyright &copy; 2020.  All rights reserved.<br /><br /></small>
+</div>
+</body>
+</html>
